@@ -13,16 +13,12 @@ return {
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = {
+                    "clangd",       -- c & c++
+                    "eslint",       -- Javascript & Typescript
                     "lua_ls",       -- lua
                     "bashls",       -- bash
-                    "eslint",       -- javascript & typescript
-                    "angularls",    -- angular
-                    "html",         -- html
-                    "cssls",        -- css
-                    "tailwindcss",  -- tailwindcss
-                    "emmet_ls",     -- emmet
-                    "marksman",     -- markdown
-                    "vimls",        -- vim script
+                    "vimls",        -- VimScript
+                    "ltex",         -- LaTeX, Markdown & Text
                 },
             })
         end,

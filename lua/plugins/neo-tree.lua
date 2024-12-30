@@ -66,7 +66,7 @@ return {
                         renamed = "󰁕",
                         untracked = "",
                         ignored = "",
-                        unstaged = "󰄱",
+                        unstaged = "○",
                         staged = "",
                         conflict = "",
                     },
@@ -238,6 +238,7 @@ return {
             },
         })
 
-        vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>", {})
+        vim.keymap.set("n", "<C-b>", ":Neotree toggle<CR>", {})
+        vim.keymap.set("n", "<C-n>", ":Neotree focus<CR>", {})
     end,
 }
