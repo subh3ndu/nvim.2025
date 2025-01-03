@@ -13,7 +13,7 @@ return {
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = {
-                    "clangd",   -- c & c++
+                    "clangd",   -- C & C++
                     "eslint",   -- Javascript & Typescript
                     "lua_ls",   -- lua
                     "bashls",   -- bash

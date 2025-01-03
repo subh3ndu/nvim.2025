@@ -11,3 +11,4 @@ set guicursor=n-v-c:block
             \,o:hor50
             \,sm:block-blinkwait175-blinkoff150-blinkon175
 ]])
+vim.cmd("set clipboard^=unnamed,unnamedplus") -- set clipboard as system
