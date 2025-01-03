@@ -37,7 +37,7 @@ return {
                 settings = {
                     Lua = {
                         diagnostics = {
-                            globals = { "vim" },
+                            globals = { "vim", "ibl.config" },
                         },
                     },
                 },
