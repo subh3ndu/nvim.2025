@@ -16,11 +16,12 @@ return {
 	-- nvim-cmp
 	{
 		"hrsh7th/nvim-cmp",
-        dependencies = {
-            "hrsh7th/cmp-git"
-        },
+    dependencies = {
+        "hrsh7th/cmp-git"
+    },
 		config = function()
 			require("luasnip.loaders.from_vscode").lazy_load()
+			require("luasnip.loaders.from_snipmate").lazy_load()
 
 			local cmp = require("cmp")
 			cmp.setup({
