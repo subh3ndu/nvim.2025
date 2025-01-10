@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 -- remove highlights after search
 vim.keymap.set('n', '<leader>nh', ':nohl<cr>', { desc = 'Clear search highlights' })
@@ -25,4 +26,3 @@ vim.keymap.set('n', '<leader>to', ':tabnew<cr>', { desc = "Open new tab" })
 vim.keymap.set('n', '<leader>to', ':tabnew<cr>', { desc = "Open new tab" })
 vim.keymap.set('n', '<leader>to', ':tabnew<cr>', { desc = "Open new tab" })
 vim.keymap.set('n', '<leader>to', ':tabnew<cr>', { desc = "Open new tab" })
-

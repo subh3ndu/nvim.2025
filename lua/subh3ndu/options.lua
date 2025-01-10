@@ -13,9 +13,8 @@ vim.cmd("set background=dark")
 vim.cmd("set signcolumn=yes")
 vim.cmd("set splitright")
 vim.cmd("set splitbelow")
-
 vim.cmd("set backspace=indent,eol,start")
-vim.cmd("set clipboard^=unnamed,unnamedplus") -- set clipboard as system
+vim.cmd("set clipboard^=unnamed,unnamedplus")
 
 vim.cmd([[
 set guicursor=n-v-c:block

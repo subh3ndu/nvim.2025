@@ -14,11 +14,7 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"clangd",     -- C & C++
-					"eslint",     -- Javascript & Typescript
 					"lua_ls",     -- lua
-					"bashls",     -- bash
-					"vimls",      -- VimScript
-					"ltex",       -- LaTeX, Markdown & Text
 				},
 			})
 		end,
@@ -45,10 +41,7 @@ return {
 				settings = {
 					Lua = {
 						diagnostics = {
-							globals = { "vim" },
-						},
-						type = {
-							globals = { "ibl.config" },
+							globals = { "vim", "ibl.config" },
 						},
 					},
 				},
