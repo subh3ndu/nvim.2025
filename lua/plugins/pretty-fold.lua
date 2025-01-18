@@ -1,7 +1,7 @@
 return {
   'anuvyklack/pretty-fold.nvim',
   config = function()
-    require('pretty-fold').setup({
+    require('pretty-fold').setup {
       config = {
         sections = {
           left = {
@@ -43,6 +43,6 @@ return {
 
         ft_ignore = { 'neorg' },
       }
-    })
+    }
   end
 }

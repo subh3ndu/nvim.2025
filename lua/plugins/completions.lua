@@ -24,7 +24,7 @@ return {
       require("luasnip.loaders.from_snipmate").lazy_load()
 
       local cmp = require("cmp")
-      cmp.setup({
+      cmp.setup {
         snippet = {
           expand = function(args)
             require("luasnip").lsp_expand(args.body)
@@ -48,7 +48,7 @@ return {
         }, {
           { name = "buffer" },
         }),
-      })
+      }
 
       cmp.setup.filetype('gitcommit', {
         sources = cmp.config.sources({
