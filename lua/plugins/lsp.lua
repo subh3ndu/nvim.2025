@@ -24,6 +24,30 @@ return {
       local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+      -- C, C++
+      lspconfig.clangd.setup {
+        capabilities = capabilities,
+        settings = {},
+      }
+
+      -- Bash
+      lspconfig.bashls.setup {
+        capabilities = capabilities,
+        settings = {},
+      }
+
+      -- Angular
+      lspconfig.angularls.setup {
+        capabilities = capabilities,
+        settings = {},
+      }
+
+      -- JavaScript & TypeScript
+      lspconfig.eslint.setup {
+        capabilities = capabilities,
+        settings = {}
+      }
+
       -- Lua lsp config
       lspconfig.lua_ls.setup {
         capabilities = capabilities,

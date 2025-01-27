@@ -5,8 +5,12 @@ return {
 
     null_ls.setup {
       sources = {
-        null_ls.builtins.formatting.stylua,
-        null_ls.builtins.diagnostics.luacheck,
+        -- Linters
+
+        -- Formatters
+        null_ls.builtins.formatting.prettier,           -- JS, TS, Angular
+        null_ls.builtins.formatting.stylua,             -- Lua
+        null_ls.builtins.formatting['clang_format'],    -- C, C++
       },
     }
 
