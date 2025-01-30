@@ -7,7 +7,11 @@ return {
     configs.setup {
       auto_install = true,
       sync_install = false,
-      highlight = { enable = true },
+      highlight = {
+        enable = true,
+        disable = { 'latex' },
+        additional_vim_regex_highlighting = { "latex", "markdown" }
+      },
       indent = { enable = true },
       option = { theme = "tokyonight" },
     }

@@ -11,9 +11,7 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     config = function()
-      require("mason-lspconfig").setup {
-        auto_install = true,
-      }
+      require("mason-lspconfig").setup { auto_install = true }
     end,
   },
 
@@ -24,26 +22,14 @@ return {
       local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-      -- C, C++
-      lspconfig.clangd.setup {
+      -- Latex
+      lspconfig.ltex.setup {
         capabilities = capabilities,
-        settings = {},
-      }
-
-      -- Bash
-      lspconfig.bashls.setup {
-        capabilities = capabilities,
-        settings = {},
-      }
-
-      -- Angular
-      lspconfig.angularls.setup {
-        capabilities = capabilities,
-        settings = {},
+        settings = {}
       }
 
       -- JavaScript & TypeScript
-      lspconfig.eslint.setup {
+      lspconfig.ts_ls.setup {
         capabilities = capabilities,
         settings = {}
       }
@@ -68,12 +54,6 @@ return {
             },
           },
         },
-      }
-
-      -- GdScript lsp config
-      lspconfig.gdscript.setup {
-        capabilities = capabilities,
-        settings = {}
       }
 
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
